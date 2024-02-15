@@ -212,7 +212,7 @@ var component_generateVueComponent = function generateVueComponent(Highcharts, V
         options: {
           handler: function handler(newValue) {
             var _this$chart;
-            (_this$chart = this.chart).update.apply(_this$chart, [copyObject(newValue, this.deepCopyOnUpdate)].concat(_toConsumableArray(this.updateArgs)));
+            (_this$chart = this.chart).update?.apply(_this$chart, [copyObject(newValue, this.deepCopyOnUpdate)].concat(_toConsumableArray(this.updateArgs)));
           },
           deep: true
         }
@@ -256,7 +256,7 @@ var component_generateVueComponent = function generateVueComponent(Highcharts, V
         return props.options;
       }, function (options, prevOptions) {
         var _chart$value;
-        (_chart$value = chart.value).update.apply(_chart$value, [copyObject(options, props.deepCopyOnUpdate)].concat(_toConsumableArray(props.updateArgs)));
+        (_chart$value = chart.value).update?.apply(_chart$value, [copyObject(options, props.deepCopyOnUpdate)].concat(_toConsumableArray(props.updateArgs)));
       }, {
         deep: true
       });
